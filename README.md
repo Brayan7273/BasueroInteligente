@@ -2,6 +2,7 @@
 Proyecto de IOT
 
 ## Integrantes
--Vanesa Monserat Medrano Hernandez
--Brayan Gael Garcia Gonzalez
--Francisco Torres Rojas
+|Nombre | Apellido Paterno | Apellido Materno |Numero de control|
+|Vanesa Monserat|Medrano|Hernandez||
+|Francisco|Torres|Rojas||
+|Brayan Gael|García|González|1222100489|
