@@ -24,7 +24,7 @@ El proyecto consiste en desarrollar un bote de basura inteligente, como parte de
 ## Lista del Hardware utilizado 
 | Id | Componente | Descripción | Imagen | Cantidad | Costo total |
 |----|------------|-------------|--------|----------|-------------|
-| 1 |Sensor de peso |Sensor que funciona como una bascula|        | https://ipowerelectronics.com.mx/1193-large_default/sensor-de-peso-fuerza-celda-de-carga-50kg-galga-arduino-pic.jpg      | 1             |$66
+| 1 |Sensor de peso |Sensor que funciona como una bascula|  https://ipowerelectronics.com.mx/1193-large_default/sensor-de-peso-fuerza-celda-de-carga-50kg-galga-arduino-pic.jpg      | 1             |$66
 | 2 |Sensor de humedad |Sensor que funciona como medidor de humedad      | https://www.330ohms.com/cdn/shop/products/photo_IC-20010_DHT11_DigitalTemperatureHumiditySensor_DHT11_01_700x700.png?v=1627344523         |   1          | $98
 | 3 |Buzzer           |Componente que emite sonido             |  https://www.steren.com.mx/media/catalog/product/cache/bb0cad18a6adb5d17b0efd58f4201a2f/image/16427f1fb/buzzer-de-3-3-khz-de-8-a-15-vcc-con-se-al-de-tono-constante-de-85-db.jpg      |   1       |    $49         |
 
