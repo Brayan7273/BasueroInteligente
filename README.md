@@ -5,7 +5,7 @@ Proyecto de IOT
 |Nombre | Apellido Paterno | Apellido Materno |Numero de control|
 |-|-|-|-|
 |Vanesa Monserat|Medrano|Hernandez||
-|Francisco|Torres|Rojas||
+|Francisco|Torres|Rojas|1222100743|
 |Brayan Gael|García|González|1222100489|
 
 ## Carta de liberación del proyecto
