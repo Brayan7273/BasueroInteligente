@@ -21,9 +21,9 @@ Proyecto de IOT
 ## Lista del Hardware utilizado 
 | Id | Componente | Descripción | Imagen | Cantidad | Costo total |
 |----|------------|-------------|--------|----------|-------------|
-|    |            |             |        |          |             |
-|    |            |             |        |          |             |
-|    |            |             |        |          |             |
+| 1 |Sensor depeso |Sensor que funciona como una bascula|        |          |             |
+| 2 |Sensor de humedad |Sensor que funciona como medidor de humedad           |        |          |             |
+| 3 |Buzzer           |Componente que emite sonido             |        |          |             |
 
 ## Lista de Software utilizado
 | Id | Software | Version | Tipo |
