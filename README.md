@@ -36,11 +36,6 @@ El proyecto consiste en desarrollar un bote de basura inteligente, como parte de
 |    |          |         |      |
 
 ## Visión del producto
-¿Como generar la visión del proyecto?
-
-Como es usual en agilidad la comunicación se ve enormemente potenciada cuando acompañamos nuestro cometido con elementos visuales. Arriba a la izquierda el resultado de un ejercicio de uno de los cursos, en que el grupo expuso una solución en la que a través de big data se pueden controlar los procesos de incapacidad laboral temporal.
-Para generar este mensaje se debe de dar respuesta a estos tres conceptos:
-
     Quién es el público: ¿Quién va a utilizar tu producto?
     Usuarios domésticos y comerciales interesados en una gestión inteligente y eficiente de los residuos.
     
@@ -53,7 +48,7 @@ Para generar este mensaje se debe de dar respuesta a estos tres conceptos:
     recordatorios automáticos y sistemas de ventilación para garantizar una experiencia higiénica y sin olores desagradables. Además, la apertura automática de la tapa 
     mejora la comodidad del usuario.
 
-Alex Brown propone el siguiente patrón como una forma de escribir o crear una visión: 
+Patrón o forma de escribir o crear visión planeada para el proyecto: 
 
     PARA <cliente objetivo> : Usuarios domésticos y comerciales preocupados por la gestión eficiente y sanitaria de los residuos.
     QUIEN <declaración de necesidad> : Quienes buscan una solución que simplifique y mejore la gestión de residuos, evitando olores desagradables, recordando eficazmente la 
@@ -68,16 +63,6 @@ Alex Brown propone el siguiente patrón como una forma de escribir o crear una v
     residuos. Gracias a su sistema inteligente de sensores y actuadores, ofrece una experiencia completamente nueva al recordar automáticamente la recolección, prevenir 
     malos olores mediante la gestión activa de la humedad, y facilitar el depósito sin contacto directo a través de la apertura automática de la tapa. Esto convierte a 
     SmartBin Pro en la elección ideal para aquellos que buscan una solución completa y avanzada para la gestión de residuos en su hogar o negocio.
-
-
-"Un enunciado de visión exitoso
-es lo suficientemente convincente
-para ser ampliamente compartido,
-conciso y fácil de recordar"
-Referencia:
-
-    Menzinsky, A. (2017). ¿Cómo se realiza la visión del producto?. Scrum.menzinsky.com. Retrieved 19 January 2017, from ¿Cómo se realiza la visión del producto?
-
 
 ## Conexiones
 - Imagenes de Wokwi, Fritzing, o de otro software que me permita mostrar las conexiones del circuito.
