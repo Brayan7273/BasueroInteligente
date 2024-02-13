@@ -1,7 +1,9 @@
-# BasueroInteligente
-Proyecto de IOT
+# Proyecto de AIoT
+Creación de un basurero inteligente 
+
 ## Resumen del proyecto
-En este 
+El proyecto consiste en desarrollar un bote de basura inteligente, como parte de la materia para el Internet de las Cosas (AIoT) que aborda la gestión eficiente de residuos. Equipado con sensores de peso y humedad, y opciones como detección de líquidos y proximidad, el producto será llamado WasteWizard Pro y este ofrece un recordatorio automático cuando el peso de la basura excede un umbral, controla la humedad para prevenir olores desagradables y facilita la deposición sin contacto con su apertura automática. Dirigido a usuarios domésticos y comerciales, busca resolver la necesidad de una gestión de residuos más efectiva y sanitaria, diferenciándose de los botes tradicionales al proporcionar una solución completa e inteligente para la gestión de residuos.
+
 ## Integrantes
 |Nombre | Apellido Paterno | Apellido Materno |Numero de control|
 |-|-|-|-|
@@ -67,16 +69,6 @@ Alex Brown propone el siguiente patrón como una forma de escribir o crear una v
     malos olores mediante la gestión activa de la humedad, y facilitar el depósito sin contacto directo a través de la apertura automática de la tapa. Esto convierte a 
     SmartBin Pro en la elección ideal para aquellos que buscan una solución completa y avanzada para la gestión de residuos en su hogar o negocio.
 
-Ejemplo de una visión:
-
-    PARA sociedades propietarias de drones
-    QUIEN tienen necesidad de asegurar sus drones y cubrir su responsabilidad civil
-    EL producto prodrone QUE ES UN seguro gestionable de forma on-line
-    QUE es un producto específico para los profesionales de drones
-    A DIFERENCIA DE nuestra competencia que solo dispone de un producto de contratación presencial
-    NUESTRO PRODUCTO es totalmente personalizable de forma on-line en cuanto a coberturas y duración se refiere
-
-Como consejo derivado de mi experiencia para la utilización de este patrón de forma positiva, si hay elementos en negativo en la parte de A DIFERENCIA DE, propongo escribirlos en positivo en NUESTRO PRODUCTO, convierte nuestro mensaje en más positivo y por tanto en más poderoso.
 
 "Un enunciado de visión exitoso
 es lo suficientemente convincente
