@@ -1,6 +1,7 @@
 # BasueroInteligente
 Proyecto de IOT
-
+## Resumen del proyecto
+En este 
 ## Integrantes
 |Nombre | Apellido Paterno | Apellido Materno |Numero de control|
 |-|-|-|-|
