@@ -80,9 +80,10 @@ Referencia:
 
 | Id | Historia de usuario | Prioridad | Estimación | Como probarlo | Responsable |
 |----|---------------------|-----------|------------|---------------|-------------|
-|    |                     |           |            |               |             |
-|    |                     |           |            |               |             |
-|    |                     |           |            |               |             |
+| 1  | Detectar el peso  dentro del contendeor|  Alta         |  1 Mes          | Introduciremos bolsas denteo del contendror |   Francisco          |
+| 2  | Detectar Humedad denteo del contendeor |Alta           |  1 Mes        | Alteraremos la humedad dentro del contendor y debera saltar la alarma  |  Vanesa          |
+| 3  | Alerta de sonido                       |Media          |  1 Mes         |Activar un evento que mande la alerta               | Brayan            |
+| 4  | Alerta de mensaje                   |Media          |  1 Mes         |Activar un evento que mande la alerta a una plataforma/app               | Brayan            |
 
 ## Prototipo en dibujo
 - Coloca la imagen de tu proyecto al iniciar el desarrollo
