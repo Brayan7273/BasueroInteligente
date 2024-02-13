@@ -5,7 +5,7 @@ En este
 ## Integrantes
 |Nombre | Apellido Paterno | Apellido Materno |Numero de control|
 |-|-|-|-|
-|Vanesa Monserat|Medrano|Hernandez||
+|Vanesa Monserat|Medrano|Hernandez|1222100447|
 |Francisco|Torres|Rojas|1222100743|
 |Brayan Gael|García|González|1222100489|
 
@@ -22,7 +22,7 @@ En este
 ## Lista del Hardware utilizado 
 | Id | Componente | Descripción | Imagen | Cantidad | Costo total |
 |----|------------|-------------|--------|----------|-------------|
-| 1 |Sensor depeso |Sensor que funciona como una bascula|        |          |             |
+| 1 |Sensor de peso |Sensor que funciona como una bascula|        |          |             |
 | 2 |Sensor de humedad |Sensor que funciona como medidor de humedad           |        |          |             |
 | 3 |Buzzer           |Componente que emite sonido             |        |          |             |
 
@@ -40,8 +40,16 @@ Como es usual en agilidad la comunicación se ve enormemente potenciada cuando a
 Para generar este mensaje se debe de dar respuesta a estos tres conceptos:
 
     Quién es el público: ¿Quién va a utilizar tu producto?
+    Usuarios domésticos y comerciales interesados en una gestión inteligente y eficiente de los residuos.
+    
     Qué problema tiene: ¿Qué problema o necesidad latente se va a satisfacer?
+    La gestión tradicional de residuos puede ser ineficiente y llevar a malos olores, olvidos de recolección y desbordamientos. Existe la necesidad de una solución que 
+    automatice y mejore la gestión de los desechos.
+   
     Qué solución se ofrece: ¿Cómo se va a satisfacer?
+    Ofrecemos un Bote de Basura Inteligente equipado con sensores de peso, humedad y otros opcionales para una gestión más eficiente. Este dispositivo incorpora 
+    recordatorios automáticos y sistemas de ventilación para garantizar una experiencia higiénica y sin olores desagradables. Además, la apertura automática de la tapa 
+    mejora la comodidad del usuario.
 
 Alex Brown propone el siguiente patrón como una forma de escribir o crear una visión: 
 
