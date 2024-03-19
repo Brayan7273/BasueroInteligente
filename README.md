@@ -31,16 +31,16 @@ El proyecto consiste en desarrollar un bote de basura inteligente, como parte de
 ## Lista de Software utilizado
 | Id | Software | Version | Tipo |
 |----|----------|---------|------|
-|    |          |         |      |
-|    |          |         |      |
-|    |          |         |      |
+|  1  |  Arduino IDE        |  2.3.2       |  Entorno de desarrollo integrado    |
+|  2  |  Thonny        |   3.1.1      | Entorno de desarrollo integrado     |
+| 3   | Raspberry  Pi Imager        | Bullseye Debian 11       |  Software de escritorio    |
 
 ## Visión del producto
     Quién es el público: ¿Quién va a utilizar tu producto?
     Usuarios domésticos y comerciales interesados en una gestión inteligente y eficiente de los residuos.
     
     Qué problema tiene: ¿Qué problema o necesidad latente se va a satisfacer?
-    La gestión tradicional de residuos puede ser ineficiente y llevar a malos olores, olvidos de recolección y desbordamientos. Existe la necesidad de una solución que 
+    La gestión tradicional de residuos puede ser ineficiente y llevar a malos olores, olvidos de  Drecolección y desbordamientos. Existe la necesidad de una solución que 
     automatice y mejore la gestión de los desechos.
    
     Qué solución se ofrece: ¿Cómo se va a satisfacer?
