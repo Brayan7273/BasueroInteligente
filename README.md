@@ -80,14 +80,14 @@ NUESTRO PRODUCTO: A diferencia de los botes de basura convencionales y algunos c
 
 | Id | Historia de usuario | Prioridad | Estimación | Como probarlo | Responsable |
 |----|---------------------|-----------|------------|---------------|-------------|
-| 1  | Detectar cuando se ingresa basura|  Alta         |  1 Mes          | Introduciremos basura al Bote  |   Laura         |
-| 2  | Detectar cuando existe alguna flama en la basura |Alta           |  1 Mes        | Encenderemos una llama para comprobar su existencia|  Laura       |
-| 3  | Detectar algun gas en la basura | Alta | 1 mes | Introduciremos alguna basura que contenga un gas para su detección. | Brayan |
-| 4  | Detectar la temperatura y humedad dentro del Bote | Alta | 1 mes |  Alteraremos la temperatura y humedad para subir y bajar los valores. | Brayan | 
-| 5  | Detectar cuando se abre y se cierra el bote de basura |Alta          |  1 Mes         | Abrir y cerrar el bote para que se detecte los valores de abierto y cerrado | Francisco    |
-| 6  | Detectar cuando se cae el Bote de Basura | Alta    |  1 Mes         | Tirar el bote para que se active el funcionamiento del sensor         | Francisco   |
-| 7  | Activar un buzzer | Media | 1 Mes | Al momento de que se cae el bote tiene que activarse el buzzer como alerta de que esta tirado el bote | Todos |
-| 8  | Encender y apagar led | Media | 1 Mes | Al momento que se abre el bote el led se enciende y al momento que se cierra se apaga. | Todos |
+| 1  | Detectar cuando se ingresa basura|  Alta         |  2 Semanas          | Introduciremos basura al Bote  |   Laura         |
+| 2  | Detectar cuando existe alguna flama en la basura |Alta           |  2 Semanas        | Encenderemos una llama para comprobar su existencia|  Laura       |
+| 3  | Detectar algun gas en la basura | Alta | 2 Semanas | Introduciremos alguna basura que contenga un gas para su detección. | Brayan |
+| 4  | Detectar la temperatura y humedad dentro del Bote | Alta |2 Semanas|  Alteraremos la temperatura y humedad para subir y bajar los valores. | Brayan | 
+| 5  | Detectar cuando se abre y se cierra el bote de basura |Alta          | 2 Semanas    | Abrir y cerrar el bote para que se detecte los valores de abierto y cerrado | Francisco    |
+| 6  | Detectar cuando se cae el Bote de Basura | Alta    | 2 Semanas   | Tirar el bote para que se active el funcionamiento del sensor         | Francisco   |
+| 7  | Activar un buzzer | Media |2 Semanas| Al momento de que se cae el bote tiene que activarse el buzzer como alerta de que esta tirado el bote | Todos |
+| 8  | Encender y apagar led | Media |2 Semanas | Al momento que se abre el bote el led se enciende y al momento que se cierra se apaga. | Todos |
 
 
 ## Prototipo en dibujo
