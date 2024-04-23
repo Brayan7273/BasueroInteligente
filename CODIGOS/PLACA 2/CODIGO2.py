@@ -2,7 +2,6 @@ from machine import Pin, I2C
 import time
 import network
 from umqtt.simple import MQTTClient
-import ssd1306
 
 # Configurar el sensor KY-033 TRACKING
 tracking_sensor_pin = Pin(15, Pin.IN)  # Conectado al pin 15 del ESP32
@@ -48,10 +47,6 @@ client_mqtt = conectar_mqtt()
 prev_flame_value = 0  # Valor previo del sensor de llama
 prev_tracking_value = 0  # Valor previo del sensor de seguimiento
 
-# Configuración del display OLED
-i2c = I2C(scl=Pin(22), sda=Pin(21))
-oled = ssd1306.SSD1306_I2C(128, 64, i2c)
-
 # Configuración del buzzer pasivo
 buzzer_pin = Pin(17, Pin.OUT)  # Conectado al pin 17 del ESP32
 
@@ -86,12 +81,6 @@ while True:
 
             prev_flame_value = flame_sensor_value  # Actualizar el valor previo del sensor de llama
             prev_tracking_value = current_tracking_state  # Actualizar el valor previo del sensor de seguimiento
-
-            # Actualizar el display OLED
-            oled.fill(0)
-            oled.text("Tracking: {}".format("SIN BASURA" if current_tracking_state == 1 else "BASURA DETECTADA"), 0, 0)
-            oled.text("Flame: {}".format("SIN FUEGO" if flame_sensor_value == 0 else "FUEGO DETECTADO"), 0, 16)
-            oled.show()
 
     except Exception as e:
         print("Error en el loop principal:", e)
