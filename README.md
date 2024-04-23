@@ -24,17 +24,14 @@ El proyecto consiste en desarrollar un bote de basura inteligente, como parte de
 ## Lista del Hardware utilizado 
 | Id | Componente | Descripción | Imagen | Cantidad | Costo total |
 |----|------------|-------------|--------|----------|-------------|
-| 1 |Sensor de gas|Este sensor detecta y mide la cantidad de gas contenido e un espacion | ![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/70d8f618-b0f0-481a-8ec8-b3870e7b89b9)
-   | 1             |$100
-| 2 |Sensor de humedad y temperatura |Sensor que funciona como medidor de humedad      | ![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/004ea1ae-a7ed-4e8e-a521-b5d8c369e0e8)
-         |   1          | $98
-| 3 |Sensor seguidor de linea KY-033 | Este módulo sensor seguidor de línea detecta si hay un área que refleja o absorbe la luz delante de él.| ![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/0844acda-4bb5-4a68-8e4b-9b34d06ccd3a) | 1 | $55 |
-| 4 | Sensor de Flama | Es un sensor que permite detectar la flama producida por el fuego u otras fuentes de luz. | ![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/24ad4f10-ae22-4caa-af28-6e56416ec3f9) | 1 | $65 |
-| 5 | Sensor de Inclinación | Sensor de inclinación que cierra internamente un circuito cuando se inclina hacia un lado, se mueva con suficiente fuerza y ​​cuenta con grado de inclinación para activar el interruptor de bola que se encuentra en su interior. | ![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/94a21b9f-9145-4ec8-a2ee-4db8fa4b0f62) | 1 | $49 |
+| 1 |Sensor de gas|Este sensor detecta y mide la cantidad de gas contenido e un espacion | ![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/70d8f618-b0f0-481a-8ec8-b3870e7b89b9) | 1 | $100 |
+| 2 |Sensor de humedad y temperatura |Sensor que funciona como medidor de humedad y temperatura| ![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/004ea1ae-a7ed-4e8e-a521-b5d8c369e0e8) | 1 | $98 |
+| 3 |Sensor seguidor de linea KY-033 | Este módulo sensor seguidor de línea detecta si hay un área que refleja o absorbe la luz delante de él.| ![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/0844acda-4bb54a68-8e4b-9b34d06ccd3a) | 1 | $55 |
+| 4 | Sensor de Flama | Es un sensor que permite detectar la flama producida por el fuego u otras fuentes de luz. | ![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/24ad4f10-ae22-4caa-af28-6e56416ec3f9) | 1 |$65 |
+| 5 | Sensor de Inclinación | Sensor de inclinación que cierra internamente un circuito cuando se inclina hacia un lado, se mueva con suficiente fuerza y ​​cuenta con grado de inclinación para activar el interruptor de bola que se encuentra en su interior. | ![image (https://github.com/Brayan7273/BasueroInteligente/assets/130590443/94a21b9f-9145-4ec8-a2ee-4db8fa4b0f62) | 1 | $49 |
 | 6 | Sensor de Bloqueo de Luz | El sensor usa un haz de luz entre el emisor y un detector para verificar si el camino entre ambos está siendo bloqueado por un objeto opaco. | ![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/f663abd2-1c2a-472c-abd2-1a0377369f24) | 1 | $39
-| 7 |Buzzer           |Componente que emite sonido             | ![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/01695b09-7f16-46f7-a2ba-62f4f1c6dd85)
-  |   2     |    $49         |
-| 8 | Display | El OLED es un tipo de panel. Y uno muy especial: en vez de usar luz de fondo como el LCD, en él cada píxel emite su propia luz. | ![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/b069473c-4775-41a4-8476-988db0130e1a) | 2 | $95 |
+| 7 |Buzzer           |Componente que emite sonido             | ![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/01695b09-7f16-46f7-a2ba-62f4f1c6dd85)|   2     |    $49         |
+| 8 | Display | El OLED es un tipo de panel. Y uno muy especial: en vez de usar luz de fondo como el LCD, en él cada píxel emite su propia luz. | ![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/b069473c-4775-41a4-8476-988db0130e1a) | 2 | $95|
 | 9 | Led | Es un dispositivo que permite el paso de corriente en un solo sentido y que al ser polarizado emite un haz de luz. | ![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/97675b5a-b680-4792-9944-bc1378977980) | 1 | $2 |
 
  
