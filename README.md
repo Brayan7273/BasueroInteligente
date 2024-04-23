@@ -44,30 +44,29 @@ El proyecto consiste en desarrollar un bote de basura inteligente, como parte de
 | 3   | Raspberry  Pi Imager        | Bullseye Debian 11       |  Software de escritorio    |
 
 ## Visión del producto
-    Quién es el público: ¿Quién va a utilizar tu producto?
+Quién es el público: ¿Quién va a utilizar tu producto?
     Usuarios domésticos y comerciales interesados en una gestión inteligente y eficiente de los residuos.
     
-    Qué problema tiene: ¿Qué problema o necesidad latente se va a satisfacer?
-    La gestión tradicional de residuos puede ser ineficiente y llevar a malos olores, olvidos de  Drecolección y desbordamientos. Existe la necesidad de una solución que 
-    automatice y mejore la gestión de los desechos.
-   
-    Qué solución se ofrece: ¿Cómo se va a satisfacer?
+Qué problema tiene: ¿Qué problema o necesidad latente se va a satisfacer?
+    La gestión tradicional de residuos puede ser ineficiente y llevar a malos olores, olvidos de  Drecolección y desbordamientos. Existe la necesidad de una solución que automatice y mejore la gestión de los desechos.
+
+Qué solución se ofrece: ¿Cómo se va a satisfacer?
     Ofrecemos un Bote de Basura Inteligente equipado con sensores de peso, humedad y otros opcionales para una gestión más eficiente. Este dispositivo incorpora 
     recordatorios automáticos y sistemas de ventilación para garantizar una experiencia higiénica y sin olores desagradables. Además, la apertura automática de la tapa 
     mejora la comodidad del usuario.
 
 Patrón o forma de escribir o crear visión planeada para el proyecto: 
 
-    PARA <cliente objetivo> : Usuarios domésticos y comerciales preocupados por la gestión eficiente y sanitaria de los residuos.
-    QUIEN <declaración de necesidad> : Quienes buscan una solución que simplifique y mejore la gestión de residuos, evitando olores desagradables, recordando eficazmente la 
+PARA: Usuarios domésticos y comerciales preocupados por la gestión eficiente y sanitaria de los residuos.
+QUIEN: Quienes buscan una solución que simplifique y mejore la gestión de residuos, evitando olores desagradables, recordando eficazmente la 
     recolección y ofreciendo una experiencia sin complicaciones.
     WasteWizard Pro de categoria Bote de Basura Inteligente y Conectado 
-    QUE <beneficio clave, razón de peso para comprar o usar> : WasteWizard Pro ofrece una gestión de residuos sin esfuerzo y sin preocupaciones, gracias a su capacidad para 
+QUE: El bote de Basura Inteligente ofrece una gestión de residuos sin esfuerzo y sin preocupaciones, gracias a su capacidad para 
     detectar automáticamente el peso de la basura, recordar la recolección oportuna y controlar la humedad para prevenir malos olores. Los usuarios experimentan una mejora 
     significativa en la higiene y eficiencia en la disposición de residuos.
-    A DIFERENCIA DE <competidor/alternativa> : Botes de basura tradicionales y contenedores inteligentes básicos sin las funciones avanzadas de recordatorio y control de 
+A DIFERENCIA DE: Botes de basura tradicionales y contenedores inteligentes básicos sin las funciones avanzadas de recordatorio y control de 
     humedad.
-    NUESTRO PRODUCTO <declaración diferencial> : A diferencia de los botes de basura convencionales y algunos competidores, WasteWizard Pro no solo se limita a contener los 
+NUESTRO PRODUCTO: A diferencia de los botes de basura convencionales y algunos competidores, no solo se limita a contener los 
     residuos. Gracias a su sistema inteligente de sensores y actuadores, ofrece una experiencia completamente nueva al recordar automáticamente la recolección, prevenir 
     malos olores mediante la gestión activa de la humedad, y facilitar el depósito sin contacto directo a través de la apertura automática de la tapa. Esto convierte a 
     SmartBin Pro en la elección ideal para aquellos que buscan una solución completa y avanzada para la gestión de residuos en su hogar o negocio.
@@ -81,18 +80,22 @@ Patrón o forma de escribir o crear visión planeada para el proyecto: 
 
 | Id | Historia de usuario | Prioridad | Estimación | Como probarlo | Responsable |
 |----|---------------------|-----------|------------|---------------|-------------|
-| 1  | Detectar el peso  dentro del contendeor|  Alta         |  1 Mes          | Introduciremos bolsas denteo del contendror |   Francisco          |
-| 2  | Detectar Humedad denteo del contendeor |Alta           |  1 Mes        | Alteraremos la humedad dentro del contendor y debera saltar la alarma  |  Vanesa          |
-| 3  | Alerta de sonido                       |Media          |  1 Mes         |Activar un evento que mande la alerta               | Brayan            |
-| 4  | Alerta de mensaje                   |Media          |  1 Mes         |Activar un evento que mande la alerta a una plataforma/app               | Brayan            |
+| 1  | Detectar cuando se ingresa basura|  Alta         |  1 Mes          | Introduciremos basura al Bote  |   Laura         |
+| 2  | Detectar cuando existe alguna flama en la basura |Alta           |  1 Mes        | Encenderemos una llama para comprobar su existencia|  Laura       |
+| 3  | Detectar algun gas en la basura | Alta | 1 mes | Introduciremos alguna basura que contenga un gas para su detección. | Brayan |
+| 4  | Detectar la temperatura y humedad dentro del Bote | Alta | 1 mes |  Alteraremos la temperatura y humedad para subir y bajar los valores. | Brayan | 
+| 5  | Detectar cuando se abre y se cierra el bote de basura |Alta          |  1 Mes         | Abrir y cerrar el bote para que se detecte los valores de abierto y cerrado | Francisco    |
+| 6  | Detectar cuando se cae el Bote de Basura | Alta    |  1 Mes         | Tirar el bote para que se active el funcionamiento del sensor         | Francisco   |
+| 7  | Activar un buzzer | Media | 1 Mes | Al momento de que se cae el bote tiene que activarse el buzzer como alerta de que esta tirado el bote | Todos |
+| 8  | Encender y apagar led | Media | 1 Mes | Al momento que se abre el bote el led se enciende y al momento que se cierra se apaga. | Todos |
+
 
 ## Prototipo en dibujo
 - Coloca la imagen de tu proyecto al iniciar el desarrollo
 
 # Evidencias de funcionamiento
 - Captura de pantalla de flujos de Node RED
+![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/c648ed9e-08bf-4c63-9d1a-228256a54c8a)
 - Captura de las pantallas del proyecto DASHBOARD y Pantalla de la ESP32
-- Video demostrativo de las funcionalidades del proyecto
-- Código fuente (PROHIBIDO PONER COMPRIMIDOS)
 
 
