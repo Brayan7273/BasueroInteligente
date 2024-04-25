@@ -15,6 +15,11 @@ mq2_pin_digital = 35  # Pin GPIO conectado al pin de salida digital del sensor M
 adc = machine.ADC(machine.Pin(mq2_pin_analog))
 dout = machine.Pin(mq2_pin_digital, machine.Pin.IN)
 
+# Configurar el buzzer
+buzzer_pin = 33  # Pin GPIO conectado al buzzer (cambia según tu conexión)
+buzzer = machine.Pin(buzzer_pin, machine.Pin.OUT)
+buzzer.off()  # Apagar el buzzer inicialmente
+
 # Configurar el display OLED
 i2c = machine.SoftI2C(scl=machine.Pin(22), sda=machine.Pin(21))  # Configura el bus I2C
 oled = ssd1306.SSD1306_I2C(128, 64, i2c, addr=0x3C)  # Cambia la dirección del dispositivo si es necesario
@@ -27,6 +32,7 @@ MQTT_TOPIC_DHT11T = "utng/arg/dht11T"
 MQTT_TOPIC_DHT11H = "utng/arg/dht11H"
 MQTT_TOPIC_MQ2_A = "utng/arg/mq2_analogico"
 MQTT_TOPIC_MQ2_D = "utng/arg/mq2_digital"
+MQTT_TOPIC_DISPLAY = "utng/arg/display"  # Nuevo tema para el mensaje del display
 MQTT_CLIENT_ID = ""
 MQTT_PORT = 1883
 
@@ -46,13 +52,24 @@ def conectar_mqtt():
     print("Conectado a MQTT Broker:", MQTT_BROKER)
     return client
 
+# Función de callback para manejar los mensajes recibidos
+def callback(topic, msg):
+    topic = topic.decode("utf-8")  # Decodificar el tema a cadena de texto
+    print("Mensaje recibido en el tema:", topic)
+    print("Contenido del mensaje:", msg)
+    # Si el mensaje se recibe en el tema para el display, mostrarlo en el OLED
+    if topic == MQTT_TOPIC_DISPLAY:
+        mensaje = msg.decode("utf-8")  # Decodificar el mensaje de bytes a cadena
+        oled.fill(0)  # Borrar el contenido previo del display
+        oled.text(mensaje, 0, 0)  # Mostrar el mensaje en el OLED
+        oled.show()  # Mostrar los datos en el display
+        time.sleep(2)
+
 def main():
     conectar_wifi()
     client = conectar_mqtt()
-    prev_temperatura = None
-    prev_humedad = None
-    prev_valor_analogico = None
-    prev_valor_digital = None
+    client.set_callback(callback)  # Configurar la función de callback
+    client.subscribe(MQTT_TOPIC_DISPLAY)  # Suscribirse al tema para el mensaje del display
     while True:
         try:
             # Lectura del sensor DHT11
@@ -65,37 +82,31 @@ def main():
             valor_digital = dout.value()
 
             # Publicar datos en MQTT si cambian los valores
-            if temperatura != prev_temperatura:
-                client.publish(MQTT_TOPIC_DHT11T, "Temp: {} C".format(temperatura))
-                prev_temperatura = temperatura
-                print("Temperatura actualizada:", temperatura)
+            client.publish(MQTT_TOPIC_DHT11T, str(temperatura))
+            client.publish(MQTT_TOPIC_DHT11H, str(humedad))
+            client.publish(MQTT_TOPIC_MQ2_A, str(valor_analogico))
+            client.publish(MQTT_TOPIC_MQ2_D, str(valor_digital))
 
-            if humedad != prev_humedad:
-                client.publish(MQTT_TOPIC_DHT11H, "Humedad: {}%".format(humedad))
-                prev_humedad = humedad
-                print("Humedad actualizada:", humedad)
-
-            if valor_analogico != prev_valor_analogico:
-                client.publish(MQTT_TOPIC_MQ2_A, str(valor_analogico))
-                prev_valor_analogico = valor_analogico
-                print("Valor analógico actualizado:", valor_analogico)
-
-            if valor_digital != prev_valor_digital:
-                client.publish(MQTT_TOPIC_MQ2_D, str(valor_digital))
-                prev_valor_digital = valor_digital
-                print("Valor digital actualizado:", valor_digital)
+            # Activar el buzzer si la humedad es mayor al 80%
+            if humedad > 10:
+                buzzer.off()
+            else:
+                buzzer.on()
 
             # Mostrar datos en el display OLED
             oled.fill(0)  # Borrar el contenido previo del display
-            oled.text("Temp: {} C".format(temperatura), 0, 0)
-            oled.text("Humedad: {} %".format(humedad), 0, 16)
+            oled.text("Temp: {}".format(temperatura), 0, 0)
+            oled.text("Humedad: {}".format(humedad), 0, 16)
             oled.text("Gas: {}".format(valor_analogico), 0, 32)
             oled.show()  # Mostrar los datos en el display
 
-            time.sleep(2)  # Esperar 2 segundos antes de la próxima lectura
+            client.check_msg()  # Verificar si hay mensajes MQTT recibidos
 
+            time.sleep(2)  # Esperar 2 segundos antes de la próxima lectura
         except Exception as e:
             print("Error:", e)
 
+
 if __name__ == "__main__":
     main()
+
