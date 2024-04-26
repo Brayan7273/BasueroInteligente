@@ -1,0 +1,76 @@
+CREATE TABLE flama(
+    id SERIAL PRIMARY KEY,
+    nombre VARCHAR(100),
+    datoRegistrado VARCHAR(100),
+    fecha_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE tracking(
+    id SERIAL PRIMARY KEY,
+    nombre VARCHAR(100),
+    datoRegistrado VARCHAR(100),
+    fecha_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE dht11T(
+    id SERIAL PRIMARY KEY,
+    nombre VARCHAR(100),
+    datoRegistrado VARCHAR(100),
+    fecha_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE dht11H(
+    id SERIAL PRIMARY KEY,
+    nombre VARCHAR(100),
+    datoRegistrado VARCHAR(100),
+    fecha_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE mq2_analogico (
+    id SERIAL PRIMARY KEY,
+    nombre VARCHAR(100),
+    datoRegistrado VARCHAR(100),
+    fecha_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE mq2_digital(
+    id SERIAL PRIMARY KEY,
+    nombre VARCHAR(100),
+    datoRegistrado VARCHAR(100),
+    fecha_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE light(
+    id SERIAL PRIMARY KEY,
+    nombre VARCHAR(100),
+    datoRegistrado VARCHAR(100),
+    fecha_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE bill(
+    id SERIAL PRIMARY KEY,
+    nombre VARCHAR(100),
+    datoRegistrado VARCHAR(100),
+    fecha_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);s
+
+CREATE TABLE movimiento(
+    id SERIAL PRIMARY KEY,
+    nombre VARCHAR(100),
+    datoRegistrado VARCHAR(100),
+    fecha_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE magnetismo(
+    id SERIAL PRIMARY KEY,
+    nombre VARCHAR(100),
+    datoRegistrado VARCHAR(100),
+    fecha_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE shock(
+    id SERIAL PRIMARY KEY,
+    nombre VARCHAR(100),
+    datoRegistrado VARCHAR(100),
+    fecha_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
