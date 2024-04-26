@@ -80,9 +80,9 @@ Nuestro prouducto: Botes de basura tradicionales y contenedores inteligentes bá
 
 ## Control de Dashboard
 
-## Codigos Microphyton y conexion
+# Codigos Microphyton y conexion
 
-# Codigo 1
+## Codigo 1
 
  
 
