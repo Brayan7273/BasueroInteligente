@@ -69,26 +69,12 @@ Nuestro prouducto: Botes de basura tradicionales y contenedores inteligentes bá
 | 9 | Led | Es un dispositivo que permite el paso de corriente en un solo sentido y que al ser polarizado emite un haz de luz. | ![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/97675b5a-b680-4792-9944-bc1378977980) | 1 | $2 |
 
  
-
-## Lista de Software utilizado
-| Id | Software | Version | Tipo |
-|----|----------|---------|------|
-|  1  |  Arduino IDE        |  2.3.2       |  Entorno de desarrollo integrado    |
-|  2  |  Thonny        |   3.1.1      | Entorno de desarrollo integrado     |
-| 3   | Raspberry  Pi Imager        | Bullseye Debian 11       |  Software de escritorio    |
-
-
-## Conexiones
-- Imagenes de Wokwi, Fritzing, o de otro software que me permita mostrar las conexiones del circuito.
-- Raspberry Pi
-- ESP 32
-
 ## Prototipo en dibujo
 - Coloca la imagen de tu proyecto al iniciar el desarrollo
 
 # Evidencias de funcionamiento
 - Captura de pantalla de flujos de Node RED
-![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/c648ed9e-08bf-4c63-9d1a-228256a54c8a)
+![image]([https://github.com/Brayan7273/BasueroInteligente/assets/130590443/c648ed9e-08bf-4c63-9d1a-228256a54c8a](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/c648ed9e-08bf-4c63-9d1a-228256a54c8a))
 - Captura de las pantallas del proyecto DASHBOARD y Pantalla de la ESP32
   
 ## Uso de Grafana
