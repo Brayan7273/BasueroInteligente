@@ -131,13 +131,8 @@ Nuestro prouducto: Botes de basura tradicionales y contenedores inteligentes bá
 
 
 # Evidencias de funcionamiento
-- Captura de pantalla de flujos de Node RED
-![image]([https://github.com/Brayan7273/BasueroInteligente/assets/130590443/c648ed9e-08bf-4c63-9d1a-228256a54c8a](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/c648ed9e-08bf-4c63-9d1a-228256a54c8a))
-- Captura de las pantallas del proyecto DASHBOARD y Pantalla de la ESP32
+
   
-
-
-
 
 ## Software Utilizado
 - Thonny
