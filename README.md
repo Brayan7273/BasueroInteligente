@@ -54,7 +54,7 @@ Nuestro prouducto: Botes de basura tradicionales y contenedores inteligentes bá
 
 
 
-## Basurero intelgente
+## Basurero inteligente
 
 ## Lista del Hardware utilizado 
 | Id | Componente | Descripción | Imagen | Cantidad | Costo total |
@@ -67,9 +67,10 @@ Nuestro prouducto: Botes de basura tradicionales y contenedores inteligentes bá
 | 6 | Sensor de Bloqueo de Luz | El sensor usa un haz de luz entre el emisor y un detector para verificar si el camino entre ambos está siendo bloqueado por un objeto opaco. | ![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/f663abd2-1c2a-472c-abd2-1a0377369f24) | 1 | $39
 | 7 |Buzzer           |Componente que emite sonido             | ![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/01695b09-7f16-46f7-a2ba-62f4f1c6dd85)|   2     |    $49         |
 | 8 | Display | El OLED es un tipo de panel. Y uno muy especial: en vez de usar luz de fondo como el LCD, en él cada píxel emite su propia luz. | ![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/b069473c-4775-41a4-8476-988db0130e1a) | 2 | $95|
-| 9 | Led | Es un dispositivo que permite el paso de corriente en un solo sentido y que al ser polarizado emite un haz de luz. | ![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/97675b5a-b680-4792-9944-bc1378977980) |  | $2 |
+| 9 | Led | Es un dispositivo que permite el paso de corriente en un solo sentido y que al ser polarizado emite un haz de luz. | ![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/97675b5a-b680-4792-9944-bc1378977980) | 5 | $2 |
 
 ## Prototipo en dibujo
+![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/ddc6c692-f970-4e6c-81f9-40f8a194bc00)
 
 
 ## Base de datos
