@@ -90,17 +90,24 @@ Nuestro prouducto: Botes de basura tradicionales y contenedores inteligentes bá
 # Codigos Microphyton y conexion
 
 ## Placa 1
-![url](https://github.com/Brayan7273/BasueroInteligente/tree/main/CODIGOS/PLACA%201)
+![Codigos placa uno](https://github.com/Brayan7273/BasueroInteligente/tree/main/CODIGOS/PLACA%201)
 
 ## Conexion 1
 
 # Placa 2
+![Codigos placa dos](https://github.com/Brayan7273/BasueroInteligente/tree/main/CODIGOS/PLACA%202)
 
 ## Conexion 2
 
 # Placa 3
+![Codigos placa tres](https://github.com/Brayan7273/BasueroInteligente/tree/main/CODIGOS/PLACA%203)
 
 ## Conexion 3
+
+# Placa 4
+![Codigos placa cuatro](https://github.com/Brayan7273/BasueroInteligente/tree/main/CODIGOS/PLACA%204)
+
+## Conexion 4
 
 
  
