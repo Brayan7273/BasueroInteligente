@@ -11,15 +11,15 @@
 El proyecto consiste en desarrollar un bote de basura inteligente, como parte de la materia para el Internet de las Cosas (AIoT) que aborda la gestión eficiente de residuos. Equipado con sensores de peso y humedad, y opciones como detección de líquidos y proximidad, el producto será llamado WasteWizard Pro y este ofrece un recordatorio automático cuando el peso de la basura excede un umbral, controla la humedad para prevenir olores desagradables y facilita la deposición sin contacto con su apertura automática. Dirigido a usuarios domésticos y comerciales, busca resolver la necesidad de una gestión de residuos más efectiva y sanitaria, diferenciándose de los botes tradicionales al proporcionar una solución completa e inteligente para la gestión de residuos.
 
 ## Objetivos
-Implementar sistemas de domótica que mejoren la eficiencia y la experiencia del cliente.
-Desarrollar un sistema de detección de objetos mediante el uso de sensor de movimeinto .
-Crear un sistema de detección de entrada de basura para llevar un conteo.
-Implementar un sistema de control de gases para prevenir accidentes.
-Implementar una pantalla que muestre la temperatura y humedad y gas en tiempo real.
-Funcionalidad de mandar mensajes y presentarlos atraves del display.
-Sistema contra insendios.
-Sistema que detecta si el bote se al volcado o si recibio un gran impacto.
-Sistema para detectar objetos metalicos o magneticos.
+- Implementar sistemas de domótica que mejoren la eficiencia y la experiencia del cliente.
+- Desarrollar un sistema de detección de objetos mediante el uso de sensor de movimeinto .
+- Crear un sistema de detección de entrada de basura para llevar un conteo.
+- Implementar un sistema de control de gases para prevenir accidentes.
+- Implementar una pantalla que muestre la temperatura y humedad y gas en tiempo real.
+- Funcionalidad de mandar mensajes y presentarlos atraves del display.
+- Sistema contra insendios.
+- Sistema que detecta si el bote se al volcado o si recibio un gran impacto.
+- Sistema para detectar objetos metalicos o magneticos.
 
 ## Problematica 
 En un edificio en el que diariamente se ingresan grandes cantidades de basura al contenderor se vuelve un probleme el control de los residiuos pues si bien hay distintos botes ninguno tiene como una clasificacion o mecanismos que impida el ingreso de distintos tipos de basura, una persona puede ingresar ya sea desechos inorganicos, organicos, de metal, critales, etc.
@@ -53,15 +53,7 @@ Nuestro prouducto: Botes de basura tradicionales y contenedores inteligentes bá
 
 
 
-## Carta de liberación del proyecto
-- Dirigida al Docente
-- Debe de expresar las funcionalidades que tiene el proyecto
-- Nombres de los integrantes que participaron en el proyecto
-- Es una imagen jpg o png.
-- Firmada por el empresario o docente ageno a la UTNG, agradeciendo la contribución de la UTNG.
-- Hoja membretada (Logo de la empresa, dirección y contacto)
 
-  Archivo:
 
 ## Lista del Hardware utilizado 
 | Id | Componente | Descripción | Imagen | Cantidad | Costo total |
@@ -91,6 +83,25 @@ Nuestro prouducto: Botes de basura tradicionales y contenedores inteligentes bá
 - Raspberry Pi
 - ESP 32
 
+## Prototipo en dibujo
+- Coloca la imagen de tu proyecto al iniciar el desarrollo
+
+# Evidencias de funcionamiento
+- Captura de pantalla de flujos de Node RED
+![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/c648ed9e-08bf-4c63-9d1a-228256a54c8a)
+- Captura de las pantallas del proyecto DASHBOARD y Pantalla de la ESP32
+  
+## Uso de Grafana
+
+
+
+## Software Utilizado
+- Thonny
+- Grafana
+- Node-red
+- Postgres
+
+
 ## Funcionalidades
 
 | Id | Historia de usuario | Prioridad | Estimación | Como probarlo | Responsable |
@@ -105,12 +116,10 @@ Nuestro prouducto: Botes de basura tradicionales y contenedores inteligentes bá
 | 8  | Encender y apagar led | Media |2 Semanas | Al momento que se abre el bote el led se enciende y al momento que se cierra se apaga. | Todos |
 
 
-## Prototipo en dibujo
-- Coloca la imagen de tu proyecto al iniciar el desarrollo
 
-# Evidencias de funcionamiento
-- Captura de pantalla de flujos de Node RED
-![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/c648ed9e-08bf-4c63-9d1a-228256a54c8a)
-- Captura de las pantallas del proyecto DASHBOARD y Pantalla de la ESP32
+
+## Video agradecimiento
+
+## Carta de liberación del proyecto
 
 
