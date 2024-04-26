@@ -1,14 +1,54 @@
 # Basurero Organico Inteligente 
 
-## Resumen del proyecto
-El proyecto consiste en desarrollar un bote de basura inteligente, como parte de la materia para el Internet de las Cosas (AIoT) que aborda la gestión eficiente de residuos. Equipado con sensores de peso y humedad, y opciones como detección de líquidos y proximidad, el producto será llamado WasteWizard Pro y este ofrece un recordatorio automático cuando el peso de la basura excede un umbral, controla la humedad para prevenir olores desagradables y facilita la deposición sin contacto con su apertura automática. Dirigido a usuarios domésticos y comerciales, busca resolver la necesidad de una gestión de residuos más efectiva y sanitaria, diferenciándose de los botes tradicionales al proporcionar una solución completa e inteligente para la gestión de residuos.
-
 ## Integrantes
 |Nombre | Apellido Paterno | Apellido Materno |Numero de control|
 |-|-|-|-|
 |Laura Berenice |Tapia|Cid|1222100476|
 |Francisco|Torres|Rojas|1222100743|
 |Brayan Gael|García|González|1222100489|
+
+## Introduccion
+El proyecto consiste en desarrollar un bote de basura inteligente, como parte de la materia para el Internet de las Cosas (AIoT) que aborda la gestión eficiente de residuos. Equipado con sensores de peso y humedad, y opciones como detección de líquidos y proximidad, el producto será llamado WasteWizard Pro y este ofrece un recordatorio automático cuando el peso de la basura excede un umbral, controla la humedad para prevenir olores desagradables y facilita la deposición sin contacto con su apertura automática. Dirigido a usuarios domésticos y comerciales, busca resolver la necesidad de una gestión de residuos más efectiva y sanitaria, diferenciándose de los botes tradicionales al proporcionar una solución completa e inteligente para la gestión de residuos.
+
+## Objetivos
+Implementar sistemas de domótica que mejoren la eficiencia y la experiencia del cliente.
+Desarrollar un sistema de detección de objetos mediante el uso de sensor de movimeinto .
+Crear un sistema de detección de entrada de basura para llevar un conteo.
+Implementar un sistema de control de gases para prevenir accidentes.
+Implementar una pantalla que muestre la temperatura y humedad y gas en tiempo real.
+Funcionalidad de mandar mensajes y presentarlos atraves del display.
+Sistema contra insendios.
+Sistema que detecta si el bote se al volcado o si recibio un gran impacto.
+Sistema para detectar objetos metalicos o magneticos.
+
+## Visión del producto
+Quién es el público: ¿Quién va a utilizar tu producto?
+    Usuarios domésticos y comerciales interesados en una gestión inteligente y eficiente de los residuos.
+    
+Qué problema tiene: ¿Qué problema o necesidad latente se va a satisfacer?
+    La gestión tradicional de residuos puede ser ineficiente y llevar a malos olores, olvidos de  Drecolección y desbordamientos. Existe la necesidad de una solución que automatice y mejore la gestión de los desechos.
+
+Qué solución se ofrece: ¿Cómo se va a satisfacer?
+    Ofrecemos un Bote de Basura Inteligente equipado con sensores de peso, humedad y otros opcionales para una gestión más eficiente. Este dispositivo incorpora 
+    recordatorios automáticos y sistemas de ventilación para garantizar una experiencia higiénica y sin olores desagradables. Además, la apertura automática de la tapa 
+    mejora la comodidad del usuario.
+
+Patrón o forma de escribir o crear visión planeada para el proyecto: 
+
+PARA: Usuarios domésticos y comerciales preocupados por la gestión eficiente y sanitaria de los residuos.
+QUIEN: Quienes buscan una solución que simplifique y mejore la gestión de residuos, evitando olores desagradables, recordando eficazmente la 
+    recolección y ofreciendo una experiencia sin complicaciones.
+    WasteWizard Pro de categoria Bote de Basura Inteligente y Conectado 
+QUE: El bote de Basura Inteligente ofrece una gestión de residuos sin esfuerzo y sin preocupaciones, gracias a su capacidad para 
+    detectar automáticamente el peso de la basura, recordar la recolección oportuna y controlar la humedad para prevenir malos olores. Los usuarios experimentan una mejora 
+    significativa en la higiene y eficiencia en la disposición de residuos.
+A DIFERENCIA DE: Botes de basura tradicionales y contenedores inteligentes básicos sin las funciones avanzadas de recordatorio y control de 
+    humedad.
+NUESTRO PRODUCTO: A diferencia de los botes de basura convencionales y algunos competidores, no solo se limita a contener los 
+    residuos. Gracias a su sistema inteligente de sensores y actuadores, ofrece una experiencia completamente nueva al recordar automáticamente la recolección, prevenir 
+    malos olores mediante la gestión activa de la humedad, y facilitar el depósito sin contacto directo a través de la apertura automática de la tapa. Esto convierte a 
+    SmartBin Pro en la elección ideal para aquellos que buscan una solución completa y avanzada para la gestión de residuos en su hogar o negocio.
+
 
 ## Carta de liberación del proyecto
 - Dirigida al Docente
@@ -42,33 +82,6 @@ El proyecto consiste en desarrollar un bote de basura inteligente, como parte de
 |  2  |  Thonny        |   3.1.1      | Entorno de desarrollo integrado     |
 | 3   | Raspberry  Pi Imager        | Bullseye Debian 11       |  Software de escritorio    |
 
-## Visión del producto
-Quién es el público: ¿Quién va a utilizar tu producto?
-    Usuarios domésticos y comerciales interesados en una gestión inteligente y eficiente de los residuos.
-    
-Qué problema tiene: ¿Qué problema o necesidad latente se va a satisfacer?
-    La gestión tradicional de residuos puede ser ineficiente y llevar a malos olores, olvidos de  Drecolección y desbordamientos. Existe la necesidad de una solución que automatice y mejore la gestión de los desechos.
-
-Qué solución se ofrece: ¿Cómo se va a satisfacer?
-    Ofrecemos un Bote de Basura Inteligente equipado con sensores de peso, humedad y otros opcionales para una gestión más eficiente. Este dispositivo incorpora 
-    recordatorios automáticos y sistemas de ventilación para garantizar una experiencia higiénica y sin olores desagradables. Además, la apertura automática de la tapa 
-    mejora la comodidad del usuario.
-
-Patrón o forma de escribir o crear visión planeada para el proyecto: 
-
-PARA: Usuarios domésticos y comerciales preocupados por la gestión eficiente y sanitaria de los residuos.
-QUIEN: Quienes buscan una solución que simplifique y mejore la gestión de residuos, evitando olores desagradables, recordando eficazmente la 
-    recolección y ofreciendo una experiencia sin complicaciones.
-    WasteWizard Pro de categoria Bote de Basura Inteligente y Conectado 
-QUE: El bote de Basura Inteligente ofrece una gestión de residuos sin esfuerzo y sin preocupaciones, gracias a su capacidad para 
-    detectar automáticamente el peso de la basura, recordar la recolección oportuna y controlar la humedad para prevenir malos olores. Los usuarios experimentan una mejora 
-    significativa en la higiene y eficiencia en la disposición de residuos.
-A DIFERENCIA DE: Botes de basura tradicionales y contenedores inteligentes básicos sin las funciones avanzadas de recordatorio y control de 
-    humedad.
-NUESTRO PRODUCTO: A diferencia de los botes de basura convencionales y algunos competidores, no solo se limita a contener los 
-    residuos. Gracias a su sistema inteligente de sensores y actuadores, ofrece una experiencia completamente nueva al recordar automáticamente la recolección, prevenir 
-    malos olores mediante la gestión activa de la humedad, y facilitar el depósito sin contacto directo a través de la apertura automática de la tapa. Esto convierte a 
-    SmartBin Pro en la elección ideal para aquellos que buscan una solución completa y avanzada para la gestión de residuos en su hogar o negocio.
 
 ## Conexiones
 - Imagenes de Wokwi, Fritzing, o de otro software que me permita mostrar las conexiones del circuito.
