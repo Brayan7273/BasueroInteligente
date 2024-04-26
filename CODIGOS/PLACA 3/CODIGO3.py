@@ -1,15 +1,16 @@
-import time
 import network
 from umqtt.simple import MQTTClient
 from machine import Pin
+import time  # Agrega esta línea para importar el módulo time
 
 # Configuración de conexión MQTT
 MQTT_BROKER = "broker.hivemq.com"
 MQTT_USER = ""
 MQTT_PASSWORD = ""
 MQTT_CLIENT_ID = ""
-MQTT_TOPIC_LIGH = "utng/arg/light"
+MQTT_TOPIC_LIGHT = "utng/arg/light"
 MQTT_TOPIC_BILL = "utng/arg/bill"
+MQTT_TOPIC_MAGNETIC = "utng/arg/magnetic"
 MQTT_PORT = 1883
 
 # Configurar conexión WiFi
@@ -34,16 +35,23 @@ conectar_wifi()
 client = conectar_mqtt()
 
 # Configuración de pines
-Pin_Sensor = 14
-Pin_Buzzer = 4
-Pin_Light_Sensor = 15
-Pin_Light_LED = 5
+Pin_Sensor_Motion = 14
+Pin_Sensor_Light = 12
+Pin_Sensor_Magnetic = 15
+Pin_Buzzer = 16
+Pin_Light_LED = 17
 
-# Configuración de pines
-sensor_movimiento = Pin(Pin_Sensor, Pin.IN)
-sensor_luz = Pin(Pin_Light_Sensor, Pin.IN)
+# Configurar pines de sensores y actuadores
+sensor_movimiento = Pin(Pin_Sensor_Motion, Pin.IN)
+sensor_luz = Pin(Pin_Sensor_Light, Pin.IN)
+sensor_magnetic = Pin(Pin_Sensor_Magnetic, Pin.IN)
 buzzer = Pin(Pin_Buzzer, Pin.OUT)
-light_led = Pin(Pin_Light_LED, Pin.OUT)  # Configurar el pin del LED indicador de luz como salida
+light_led = Pin(Pin_Light_LED, Pin.OUT)
+
+# Variables para controlar el estado de los sensores
+sensor_motion_activated = False
+sensor_light_activated = False
+sensor_magnetic_activated = False
 
 # Variables para controlar el estado de los sensores
 sensor_movimiento_activado = False
@@ -78,6 +86,21 @@ def verificar_sensor_luz(client):
         return True
     return False
 
+# Función para verificar el sensor magnético
+def verificar_sensor_magnetic(client):
+    global sensor_magnetic_activated
+    
+    magnetic_value = sensor_magnetic.value()
+    
+    if magnetic_value == 0 and not sensor_magnetic_activated:
+        sensor_magnetic_activated = True
+        return True
+    elif magnetic_value == 1 and sensor_magnetic_activated:
+        sensor_magnetic_activated = False
+        return True
+    return False
+
+# Función principal
 def main():
     conectar_wifi()
     client = conectar_mqtt()
@@ -95,15 +118,26 @@ def main():
 
         if verificar_sensor_luz(client):
             if sensor_luz_activado:
-                client.publish(MQTT_TOPIC_LIGH, "Abierto")
+                client.publish(MQTT_TOPIC_LIGHT, "Abierto")
                 print("Abierto")
                 light_led.on()  # Encender el LED indicador de luz cuando el sensor de luz está activado
             else:
-                client.publish(MQTT_TOPIC_LIGH, "Cerrado")
+                client.publish(MQTT_TOPIC_LIGHT, "Cerrado")
                 print("Cerrado")
-                light_led.off()  # Apagar el LED indicador de luz cuando el sensor de luz está desactivado
+                light_led.off() 
 
-        time.sleep(1)  # Espera 1 segundo entre cada iteración
+        if verificar_sensor_magnetic(client):
+            if sensor_magnetic_activated:
+                client.publish(MQTT_TOPIC_MAGNETIC, "Objeto magnético detectado")
+                print("Objeto magnético detectado")
+            else:
+                client.publish(MQTT_TOPIC_MAGNETIC, "No se detecta objeto magnético")
+                print("No se detecta objeto magnético")
+
+        time.sleep(1)
 
 if __name__ == "__main__":
     main()
+
+
+
