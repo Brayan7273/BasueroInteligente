@@ -69,16 +69,32 @@ Nuestro prouducto: Botes de basura tradicionales y contenedores inteligentes bá
 | 8 | Display | El OLED es un tipo de panel. Y uno muy especial: en vez de usar luz de fondo como el LCD, en él cada píxel emite su propia luz. | ![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/b069473c-4775-41a4-8476-988db0130e1a) | 2 | $95|
 | 9 | Led | Es un dispositivo que permite el paso de corriente en un solo sentido y que al ser polarizado emite un haz de luz. | ![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/97675b5a-b680-4792-9944-bc1378977980) |  | $2 |
 
- 
 ## Prototipo en dibujo
-- Coloca la imagen de tu proyecto al iniciar el desarrollo
+
+
+## Base de datos
+
+
+## Flujo Node-red
+
+
+## Control de Dashboard
+
+## Codigos Microphyton y conexion
+
+# Codigo 1
+
+ 
+
+  
+## Uso de Grafana
 
 # Evidencias de funcionamiento
 - Captura de pantalla de flujos de Node RED
 ![image]([https://github.com/Brayan7273/BasueroInteligente/assets/130590443/c648ed9e-08bf-4c63-9d1a-228256a54c8a](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/c648ed9e-08bf-4c63-9d1a-228256a54c8a))
 - Captura de las pantallas del proyecto DASHBOARD y Pantalla de la ESP32
   
-## Uso de Grafana
+
 
 
 
