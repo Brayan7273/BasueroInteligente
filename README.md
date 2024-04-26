@@ -74,21 +74,42 @@ Nuestro prouducto: Botes de basura tradicionales y contenedores inteligentes bá
 
 
 ## Base de datos
+![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/f4ccef12-4be0-43da-8503-b9a5c5e68c4f)
 
 
 ## Flujo Node-red
+![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/b4556719-c332-412f-8a96-8a55335e0ed7)
+![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/7d86aeab-d208-429b-be6a-36ad1a076848)
+![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/eb7c714e-05e1-40ee-829d-995c96ba5cf1)
 
 
 ## Control de Dashboard
+![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/8c6016b4-052f-4979-865d-89f1c9195ade)
+
 
 # Codigos Microphyton y conexion
 
 ## Codigo 1
 
  
-
   
 ## Uso de Grafana
+![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/d08a801c-13fe-460c-82cc-32741ae6e6af)
+![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/6c70c947-e540-497c-aa22-94f5c744ea44)
+![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/2e9fda14-6b54-4440-81e4-debb8fb478ac)
+![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/e4d53e46-5f17-48ea-a150-07b72dc0e5e9)
+![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/ab039eef-a933-4588-b196-5e1ce8f4958d)
+![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/c848170f-7c50-42f9-82ba-9b0d23fb8ef8)
+![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/c97b8434-ec6d-45a9-94ab-40e0070b18e1)
+![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/7cd2d6a9-8800-4b96-9547-223c04761ea9)
+![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/de8c1672-be44-4adf-a68e-537512e4c85c)
+![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/2760b0bc-40e2-4c93-a0a3-d304b0dc6088)
+![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/af2b8b11-6337-41b8-9831-771af4e2f411)
+![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/c60121a9-05ab-462d-a583-d0b5ccd1bff9)
+![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/e0e9bff8-4f2a-4665-8fda-c86eb897e0be)
+![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/e0f56a83-fed9-4301-89d2-fba18ceae313)
+![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/78fba91d-787b-4fb8-948d-28590a70179e)
+
 
 # Evidencias de funcionamiento
 - Captura de pantalla de flujos de Node RED
