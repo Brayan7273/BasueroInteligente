@@ -25,6 +25,9 @@ Sistema para detectar objetos metalicos o magneticos.
 En un edificio en el que diariamente se ingresan grandes cantidades de basura al contenderor se vuelve un probleme el control de los residiuos pues si bien hay distintos botes ninguno tiene como una clasificacion o mecanismos que impida el ingreso de distintos tipos de basura, una persona puede ingresar ya sea desechos inorganicos, organicos, de metal, critales, etc.
 Este es un problema a la hora de desacerse de la basura pues solo se junta todo y se junta sin tener consideracion , ademas es un inconveniente a la hora del reciclaje ya que para las personas encargadas de separar y organizar la basura no es nada sencillo hacer esta actividad.
 
+## Propuesta de solucion
+Desarrollar un concetendor inteligente capas de alamacenar y monitorear los datos del entorno y de dentro de este mismmo para asegurar su integrida, asi como la de los usuarios que diariamente lo utilizan, este contendor contara con sensores de humedad, temperatura, proximidad, magnetismo, flama, movimiento, inclicacion, gases, choque, con este se mejorara su funcionamiento y ademas reesultara util para los clientes  y los separadaor de desecho.
+
 ## Visión del producto
 Quién es el público: ¿Quién va a utilizar tu producto?
     Usuarios domésticos y comerciales interesados en una gestión inteligente y eficiente de los residuos.
@@ -37,24 +40,17 @@ Qué solución se ofrece: ¿Cómo se va a satisfacer?
     recordatorios automáticos y sistemas de ventilación para garantizar una experiencia higiénica y sin olores desagradables. Además, la apertura automática de la tapa 
     mejora la comodidad del usuario.
 
-Patrón o forma de escribir o crear visión planeada para el proyecto: 
-
-PARA: Usuarios domésticos y comerciales preocupados por la gestión eficiente y sanitaria de los residuos.
-
 QUIEN: Quienes buscan una solución que simplifique y mejore la gestión de residuos, evitando olores desagradables, recordando eficazmente la 
     recolección y ofreciendo una experiencia sin complicaciones.
     WasteWizard Pro de categoria Bote de Basura Inteligente y Conectado 
+    
 QUE: El bote de Basura Inteligente ofrece una gestión de residuos sin esfuerzo y sin preocupaciones, gracias a su capacidad para 
     detectar automáticamente el peso de la basura, recordar la recolección oportuna y controlar la humedad para prevenir malos olores. Los usuarios experimentan una mejora 
     significativa en la higiene y eficiencia en la disposición de residuos.
 
-A DIFERENCIA DE: Botes de basura tradicionales y contenedores inteligentes básicos sin las funciones avanzadas de recordatorio y control de 
-    humedad.
+Nuestro prouducto: Botes de basura tradicionales y contenedores inteligentes básicos sin las funciones avanzadas de recordatorio y control de 
+    humedad, ademas de monitoreo de gases toxios, control de fuego y iluminacion automatizada.
 
-NUESTRO PRODUCTO: A diferencia de los botes de basura convencionales y algunos competidores, no solo se limita a contener los 
-    residuos. Gracias a su sistema inteligente de sensores y actuadores, ofrece una experiencia completamente nueva al recordar automáticamente la recolección, prevenir 
-    malos olores mediante la gestión activa de la humedad, y facilitar el depósito sin contacto directo a través de la apertura automática de la tapa. Esto convierte a 
-    SmartBin Pro en la elección ideal para aquellos que buscan una solución completa y avanzada para la gestión de residuos en su hogar o negocio.
 
 
 ## Carta de liberación del proyecto
