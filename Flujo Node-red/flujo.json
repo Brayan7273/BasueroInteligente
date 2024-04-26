@@ -1,0 +1,2193 @@
+[
+    {
+        "id": "ee2cd2825630fd69",
+        "type": "tab",
+        "label": "Flujo Sensores",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "2cde0591b3936d17",
+        "type": "mqtt in",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "topic": "utng/arg/dht11T",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "894951dafb5e412e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 160,
+        "wires": [
+            [
+                "75fa08338f10b0d3"
+            ]
+        ]
+    },
+    {
+        "id": "eb545dd20529672f",
+        "type": "debug",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 730,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "75fa08338f10b0d3",
+        "type": "function",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "func": "msg.payload \nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 160,
+        "wires": [
+            [
+                "3eeb15220546f05e"
+            ]
+        ]
+    },
+    {
+        "id": "3eeb15220546f05e",
+        "type": "postgresql",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "query": "INSERT INTO dht11T (nombre, datoRegistrado, fecha_registro) VALUES ('DHT11Temperatura', '{{msg.payload}}', NOW());\n",
+        "postgreSQLConfig": "9277f660ec41eacb",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 530,
+        "y": 160,
+        "wires": [
+            [
+                "eb545dd20529672f"
+            ]
+        ]
+    },
+    {
+        "id": "6f005cbd7857c6c8",
+        "type": "mqtt in",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "topic": "utng/arg/light",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "894951dafb5e412e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 400,
+        "wires": [
+            [
+                "3922624a9cf4c019"
+            ]
+        ]
+    },
+    {
+        "id": "90b9b448b815ba85",
+        "type": "debug",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 730,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "3922624a9cf4c019",
+        "type": "function",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "func": "msg.payload = msg.payload\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 400,
+        "wires": [
+            [
+                "a259f54c9a7e9bb2"
+            ]
+        ]
+    },
+    {
+        "id": "a259f54c9a7e9bb2",
+        "type": "postgresql",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "query": "INSERT INTO light (nombre, datoRegistrado, fecha_registro) VALUES ('LIGHT BLOCKING', '{{msg.payload}}', NOW());\n",
+        "postgreSQLConfig": "9277f660ec41eacb",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 530,
+        "y": 400,
+        "wires": [
+            [
+                "90b9b448b815ba85"
+            ]
+        ]
+    },
+    {
+        "id": "7dd0ecc84718dc6a",
+        "type": "mqtt in",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "topic": "utng/arg/bill",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "894951dafb5e412e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 460,
+        "wires": [
+            [
+                "cfda8c6b6b49d0e9"
+            ]
+        ]
+    },
+    {
+        "id": "a74ab7392a730d52",
+        "type": "debug",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "cfda8c6b6b49d0e9",
+        "type": "function",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "func": "msg.payload = msg.payload \nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 460,
+        "wires": [
+            [
+                "a04f4193ecfc38ba"
+            ]
+        ]
+    },
+    {
+        "id": "a04f4193ecfc38ba",
+        "type": "postgresql",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "query": "INSERT INTO bill (nombre, datoRegistrado, fecha_registro) VALUES ('Bill', '{{msg.payload}}', NOW());\n",
+        "postgreSQLConfig": "9277f660ec41eacb",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 510,
+        "y": 460,
+        "wires": [
+            [
+                "a74ab7392a730d52"
+            ]
+        ]
+    },
+    {
+        "id": "7e8d21872bedd366",
+        "type": "mqtt in",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "topic": "utng/arg/dht11H",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "894951dafb5e412e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 220,
+        "wires": [
+            [
+                "fd5f7f0555bb97b9"
+            ]
+        ]
+    },
+    {
+        "id": "75b907d8f310ae11",
+        "type": "debug",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 670,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "fd5f7f0555bb97b9",
+        "type": "function",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "func": "msg.payload = msg.payload \nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 220,
+        "wires": [
+            [
+                "3134a75418a0eeca"
+            ]
+        ]
+    },
+    {
+        "id": "3134a75418a0eeca",
+        "type": "postgresql",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "query": "INSERT INTO dht11H (nombre, datoRegistrado, fecha_registro) VALUES ('DHT11Humedad', '{{msg.payload}}', NOW());\n",
+        "postgreSQLConfig": "9277f660ec41eacb",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 490,
+        "y": 220,
+        "wires": [
+            [
+                "75b907d8f310ae11"
+            ]
+        ]
+    },
+    {
+        "id": "f7508d3b475d41bd",
+        "type": "mqtt in",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "topic": "utng/arg/mq2_analogico",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "894951dafb5e412e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 280,
+        "wires": [
+            [
+                "f244160f30e4c01d"
+            ]
+        ]
+    },
+    {
+        "id": "29c817cc22d87046",
+        "type": "debug",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "f244160f30e4c01d",
+        "type": "function",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "func": "msg.payload = msg.payload \nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 280,
+        "wires": [
+            [
+                "4c54df3affdc544b"
+            ]
+        ]
+    },
+    {
+        "id": "4c54df3affdc544b",
+        "type": "postgresql",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "query": "INSERT INTO mq2_analogico (nombre, datoRegistrado, fecha_registro) VALUES ('DHT11Humedad', '{{msg.payload}}', NOW());\n",
+        "postgreSQLConfig": "9277f660ec41eacb",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 530,
+        "y": 280,
+        "wires": [
+            [
+                "29c817cc22d87046"
+            ]
+        ]
+    },
+    {
+        "id": "dbeb215cab4720b8",
+        "type": "mqtt in",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "topic": "utng/arg/mq2_digital",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "894951dafb5e412e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 340,
+        "wires": [
+            [
+                "f9a4d66f6872a423"
+            ]
+        ]
+    },
+    {
+        "id": "af728141e5105ca6",
+        "type": "debug",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 730,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "f9a4d66f6872a423",
+        "type": "function",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "func": "msg.payload = msg.payload \nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 340,
+        "wires": [
+            [
+                "eb42544f93c57ec8"
+            ]
+        ]
+    },
+    {
+        "id": "eb42544f93c57ec8",
+        "type": "postgresql",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "query": "INSERT INTO mq2_digital (nombre, datoRegistrado, fecha_registro) VALUES ('DHT11Humedad', '{{msg.payload}}', NOW());\n",
+        "postgreSQLConfig": "9277f660ec41eacb",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 530,
+        "y": 340,
+        "wires": [
+            [
+                "af728141e5105ca6"
+            ]
+        ]
+    },
+    {
+        "id": "5a59b39258cdcc16",
+        "type": "postgresql",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "query": "SELECT datoRegistrado \nFROM dht11H \nORDER BY fecha_registro DESC \nLIMIT 1;\n",
+        "postgreSQLConfig": "9277f660ec41eacb",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 1130,
+        "y": 40,
+        "wires": [
+            [
+                "b0f165925b78a6a7"
+            ]
+        ]
+    },
+    {
+        "id": "acfdf02036082a60",
+        "type": "ui_button",
+        "z": "ee2cd2825630fd69",
+        "name": "Obtener Datos",
+        "group": "26220687d126bda9",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "label": "Obtener Datos Humedad",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 960,
+        "y": 40,
+        "wires": [
+            [
+                "5a59b39258cdcc16"
+            ]
+        ]
+    },
+    {
+        "id": "b0f165925b78a6a7",
+        "type": "function",
+        "z": "ee2cd2825630fd69",
+        "name": "Formato de Salida",
+        "func": "msg.payload = msg.payload[0];\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1310,
+        "y": 40,
+        "wires": [
+            [
+                "91d91048ab3bad1b"
+            ]
+        ]
+    },
+    {
+        "id": "91d91048ab3bad1b",
+        "type": "ui_text",
+        "z": "ee2cd2825630fd69",
+        "group": "26220687d126bda9",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Estado acutal",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1500,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "ede60c410828a24f",
+        "type": "postgresql",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "query": "SELECT datoRegistrado \nFROM dht11T \nORDER BY fecha_registro DESC \nLIMIT 1;",
+        "postgreSQLConfig": "9277f660ec41eacb",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 1130,
+        "y": 100,
+        "wires": [
+            [
+                "8eddc2faaaf45a7f"
+            ]
+        ]
+    },
+    {
+        "id": "394a84c3ce3ffd86",
+        "type": "ui_button",
+        "z": "ee2cd2825630fd69",
+        "name": "Obtener Datos",
+        "group": "6a0c38c197ca3c87",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "label": "Obtener Datos Temperatura",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 960,
+        "y": 100,
+        "wires": [
+            [
+                "ede60c410828a24f"
+            ]
+        ]
+    },
+    {
+        "id": "8eddc2faaaf45a7f",
+        "type": "function",
+        "z": "ee2cd2825630fd69",
+        "name": "Formato de Salida",
+        "func": "msg.payload = msg.payload[0];\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1310,
+        "y": 100,
+        "wires": [
+            [
+                "a2455395666ee2b9"
+            ]
+        ]
+    },
+    {
+        "id": "a2455395666ee2b9",
+        "type": "ui_text",
+        "z": "ee2cd2825630fd69",
+        "group": "6a0c38c197ca3c87",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Estado Actual",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1500,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "9bb51fc6bfbc615b",
+        "type": "postgresql",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "query": "SELECT datoRegistrado \nFROM mq2_analogico \nORDER BY fecha_registro DESC \nLIMIT 1;\n",
+        "postgreSQLConfig": "9277f660ec41eacb",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 1130,
+        "y": 160,
+        "wires": [
+            [
+                "bd1e9c6b0426593d"
+            ]
+        ]
+    },
+    {
+        "id": "213392096fb24175",
+        "type": "ui_button",
+        "z": "ee2cd2825630fd69",
+        "name": "Obtener Datos",
+        "group": "6df988d63248b17a",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "label": "Obtener Datos Gas analogico",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 960,
+        "y": 160,
+        "wires": [
+            [
+                "9bb51fc6bfbc615b"
+            ]
+        ]
+    },
+    {
+        "id": "bd1e9c6b0426593d",
+        "type": "function",
+        "z": "ee2cd2825630fd69",
+        "name": "Formato de Salida",
+        "func": "msg.payload = msg.payload[0];\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1310,
+        "y": 160,
+        "wires": [
+            [
+                "973fb47bc17f82df"
+            ]
+        ]
+    },
+    {
+        "id": "973fb47bc17f82df",
+        "type": "ui_text",
+        "z": "ee2cd2825630fd69",
+        "group": "6df988d63248b17a",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Estado Actual",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1500,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "7f3e2c1f3cc24c64",
+        "type": "postgresql",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "query": "SELECT datoRegistrado \nFROM flama\nORDER BY fecha_registro DESC \nLIMIT 1;\n",
+        "postgreSQLConfig": "9277f660ec41eacb",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 1130,
+        "y": 280,
+        "wires": [
+            [
+                "3f7e91143b6e0fdf"
+            ]
+        ]
+    },
+    {
+        "id": "0574c24a93617179",
+        "type": "ui_button",
+        "z": "ee2cd2825630fd69",
+        "name": "Obtener Datos",
+        "group": "a3120a783b45ebb8",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "label": "Obtener Datos Flama",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 960,
+        "y": 280,
+        "wires": [
+            [
+                "7f3e2c1f3cc24c64"
+            ]
+        ]
+    },
+    {
+        "id": "3f7e91143b6e0fdf",
+        "type": "function",
+        "z": "ee2cd2825630fd69",
+        "name": "Formato de Salida",
+        "func": "msg.payload = msg.payload[0];\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1310,
+        "y": 280,
+        "wires": [
+            [
+                "55242b3c1318ec78"
+            ]
+        ]
+    },
+    {
+        "id": "55242b3c1318ec78",
+        "type": "ui_text",
+        "z": "ee2cd2825630fd69",
+        "group": "a3120a783b45ebb8",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Estado Actual",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1500,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "07651db875fc4b6d",
+        "type": "postgresql",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "query": "SELECT datoRegistrado \nFROM light\nORDER BY fecha_registro DESC \nLIMIT 1;",
+        "postgreSQLConfig": "9277f660ec41eacb",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 1130,
+        "y": 340,
+        "wires": [
+            [
+                "85bf2f37a61dd0da"
+            ]
+        ]
+    },
+    {
+        "id": "1733f8056acf8fa8",
+        "type": "ui_button",
+        "z": "ee2cd2825630fd69",
+        "name": "Obtener Datos",
+        "group": "59030f69684c3481",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "label": "Obtener Datos Luz",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 960,
+        "y": 340,
+        "wires": [
+            [
+                "07651db875fc4b6d"
+            ]
+        ]
+    },
+    {
+        "id": "85bf2f37a61dd0da",
+        "type": "function",
+        "z": "ee2cd2825630fd69",
+        "name": "Formato de Salida",
+        "func": "msg.payload = msg.payload[0];\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1310,
+        "y": 340,
+        "wires": [
+            [
+                "59986f709f13770c"
+            ]
+        ]
+    },
+    {
+        "id": "59986f709f13770c",
+        "type": "ui_text",
+        "z": "ee2cd2825630fd69",
+        "group": "59030f69684c3481",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Estado Actual",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1500,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "25264e34e53167c2",
+        "type": "postgresql",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "query": "SELECT datoRegistrado \nFROM bill\nORDER BY fecha_registro DESC \nLIMIT 1;",
+        "postgreSQLConfig": "9277f660ec41eacb",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 1130,
+        "y": 400,
+        "wires": [
+            [
+                "2eeec9b63369240a"
+            ]
+        ]
+    },
+    {
+        "id": "74e0812c19afad58",
+        "type": "ui_button",
+        "z": "ee2cd2825630fd69",
+        "name": "Obtener Datos",
+        "group": "7ecd3f8883260b99",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "label": "Obtener Datos Estabilidad",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 960,
+        "y": 400,
+        "wires": [
+            [
+                "25264e34e53167c2"
+            ]
+        ]
+    },
+    {
+        "id": "2eeec9b63369240a",
+        "type": "function",
+        "z": "ee2cd2825630fd69",
+        "name": "Formato de Salida",
+        "func": "msg.payload = msg.payload[0];\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1310,
+        "y": 400,
+        "wires": [
+            [
+                "f2dfa0dd7dbb72af"
+            ]
+        ]
+    },
+    {
+        "id": "f2dfa0dd7dbb72af",
+        "type": "ui_text",
+        "z": "ee2cd2825630fd69",
+        "group": "7ecd3f8883260b99",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Estado Actual",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1500,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "eb3af19d7763348f",
+        "type": "postgresql",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "query": "SELECT datoRegistrado \nFROM movimiento\nORDER BY fecha_registro DESC \nLIMIT 1;",
+        "postgreSQLConfig": "9277f660ec41eacb",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 1130,
+        "y": 460,
+        "wires": [
+            [
+                "88abd636305288b7"
+            ]
+        ]
+    },
+    {
+        "id": "df4a945b943f6de2",
+        "type": "ui_button",
+        "z": "ee2cd2825630fd69",
+        "name": "Obtener Datos",
+        "group": "18ef67554c2dbd1f",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "label": "Obtener Datos Movimiento",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 960,
+        "y": 460,
+        "wires": [
+            [
+                "eb3af19d7763348f"
+            ]
+        ]
+    },
+    {
+        "id": "88abd636305288b7",
+        "type": "function",
+        "z": "ee2cd2825630fd69",
+        "name": "Formato de Salida",
+        "func": "msg.payload = msg.payload[0];\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1310,
+        "y": 460,
+        "wires": [
+            [
+                "6caeaf95b0aa640c"
+            ]
+        ]
+    },
+    {
+        "id": "6caeaf95b0aa640c",
+        "type": "ui_text",
+        "z": "ee2cd2825630fd69",
+        "group": "18ef67554c2dbd1f",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Estado Actual",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1500,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "afc6f49da5134c2e",
+        "type": "postgresql",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "query": "SELECT datoRegistrado \nFROM magnetismo\nORDER BY fecha_registro DESC \nLIMIT 1;",
+        "postgreSQLConfig": "9277f660ec41eacb",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 1130,
+        "y": 520,
+        "wires": [
+            [
+                "82f6810ccb69fe24"
+            ]
+        ]
+    },
+    {
+        "id": "e4e98268af3efc02",
+        "type": "ui_button",
+        "z": "ee2cd2825630fd69",
+        "name": "Obtener Datos",
+        "group": "2782feef61bebd0e",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "label": "Obtener Datos de Magnetismo",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 960,
+        "y": 520,
+        "wires": [
+            [
+                "afc6f49da5134c2e"
+            ]
+        ]
+    },
+    {
+        "id": "82f6810ccb69fe24",
+        "type": "function",
+        "z": "ee2cd2825630fd69",
+        "name": "Formato de Salida",
+        "func": "msg.payload = msg.payload[0];\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1310,
+        "y": 520,
+        "wires": [
+            [
+                "52c249488df406f5"
+            ]
+        ]
+    },
+    {
+        "id": "52c249488df406f5",
+        "type": "ui_text",
+        "z": "ee2cd2825630fd69",
+        "group": "2782feef61bebd0e",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Estado Actual",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1500,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "20e84147c7673265",
+        "type": "postgresql",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "query": "SELECT datoRegistrado \nFROM tracking\nORDER BY fecha_registro DESC \nLIMIT 1;",
+        "postgreSQLConfig": "9277f660ec41eacb",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 1130,
+        "y": 580,
+        "wires": [
+            [
+                "6942797516141b25"
+            ]
+        ]
+    },
+    {
+        "id": "c8289f4228676a7d",
+        "type": "ui_button",
+        "z": "ee2cd2825630fd69",
+        "name": "Obtener Datos",
+        "group": "a140c1781c7615bb",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "label": "Obtener Datos Tranking",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 960,
+        "y": 580,
+        "wires": [
+            [
+                "20e84147c7673265"
+            ]
+        ]
+    },
+    {
+        "id": "6942797516141b25",
+        "type": "function",
+        "z": "ee2cd2825630fd69",
+        "name": "Formato de Salida",
+        "func": "msg.payload = msg.payload[0];\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1310,
+        "y": 580,
+        "wires": [
+            [
+                "35d6e10da9b57dd9"
+            ]
+        ]
+    },
+    {
+        "id": "35d6e10da9b57dd9",
+        "type": "ui_text",
+        "z": "ee2cd2825630fd69",
+        "group": "a140c1781c7615bb",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Estado Actual",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1500,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "635fb40093be012e",
+        "type": "mqtt in",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "topic": "utng/arg/movimiento",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "894951dafb5e412e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 520,
+        "wires": [
+            [
+                "0ef7aeb5f71b5b45"
+            ]
+        ]
+    },
+    {
+        "id": "b9e4a4c140520ae7",
+        "type": "debug",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "0ef7aeb5f71b5b45",
+        "type": "function",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "func": "msg.payload = msg.payload \nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 520,
+        "wires": [
+            [
+                "ce427a743ed74f76"
+            ]
+        ]
+    },
+    {
+        "id": "ce427a743ed74f76",
+        "type": "postgresql",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "query": "INSERT INTO movimiento (nombre, datoRegistrado, fecha_registro) VALUES ('Movimiento', '{{msg.payload}}', NOW());\n",
+        "postgreSQLConfig": "9277f660ec41eacb",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 510,
+        "y": 520,
+        "wires": [
+            [
+                "b9e4a4c140520ae7"
+            ]
+        ]
+    },
+    {
+        "id": "c0880538ede726d1",
+        "type": "mqtt in",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "topic": "utng/arg/magnetic",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "894951dafb5e412e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 580,
+        "wires": [
+            [
+                "7ae6424abe99f7a1"
+            ]
+        ]
+    },
+    {
+        "id": "7abc22b19ade26ec",
+        "type": "debug",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "7ae6424abe99f7a1",
+        "type": "function",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "func": "msg.payload = msg.payload \nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 580,
+        "wires": [
+            [
+                "d674712e10bb947e"
+            ]
+        ]
+    },
+    {
+        "id": "d674712e10bb947e",
+        "type": "postgresql",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "query": "INSERT INTO magnetismo (nombre, datoRegistrado, fecha_registro) VALUES ('BALL SWITCH', '{{msg.payload}}', NOW());\n",
+        "postgreSQLConfig": "9277f660ec41eacb",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 510,
+        "y": 580,
+        "wires": [
+            [
+                "7abc22b19ade26ec"
+            ]
+        ]
+    },
+    {
+        "id": "17dd1dd40d9df23c",
+        "type": "mqtt in",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "topic": "utng/arg/shock",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "894951dafb5e412e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 640,
+        "wires": [
+            [
+                "b61922140ba47049"
+            ]
+        ]
+    },
+    {
+        "id": "0897fc0cb78d8309",
+        "type": "debug",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "b61922140ba47049",
+        "type": "function",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "func": "msg.payload = msg.payload \nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 640,
+        "wires": [
+            [
+                "6bbd8c77d85ad076"
+            ]
+        ]
+    },
+    {
+        "id": "6bbd8c77d85ad076",
+        "type": "postgresql",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "query": "INSERT INTO shock (nombre, datoRegistrado, fecha_registro) VALUES ('Movimiento', '{{msg.payload}}', NOW());\n",
+        "postgreSQLConfig": "9277f660ec41eacb",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 510,
+        "y": 640,
+        "wires": [
+            [
+                "0897fc0cb78d8309"
+            ]
+        ]
+    },
+    {
+        "id": "da5d75cdf9d45713",
+        "type": "inject",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1720,
+        "y": 40,
+        "wires": [
+            [
+                "02329c829159cc92"
+            ]
+        ]
+    },
+    {
+        "id": "dd5eab9da626c4fe",
+        "type": "mqtt out",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "topic": "utng/arg/movimiento",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "50c9e624b497b79e",
+        "x": 2200,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "02329c829159cc92",
+        "type": "ui_switch",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "label": "Ensender led de movimiento",
+        "tooltip": "",
+        "group": "1f98ecb7e0603555",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 1940,
+        "y": 40,
+        "wires": [
+            [
+                "dd5eab9da626c4fe"
+            ]
+        ]
+    },
+    {
+        "id": "def4ebb8f9313d54",
+        "type": "postgresql",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "query": "SELECT datoRegistrado \nFROM mq2_digital\nORDER BY fecha_registro DESC \nLIMIT 1;\n",
+        "postgreSQLConfig": "9277f660ec41eacb",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 1130,
+        "y": 220,
+        "wires": [
+            [
+                "4ae88936692db2ba"
+            ]
+        ]
+    },
+    {
+        "id": "2a30ceef2cbaff54",
+        "type": "ui_button",
+        "z": "ee2cd2825630fd69",
+        "name": "Obtener Datos",
+        "group": "063b0fd8e7aed66e",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "label": "Obtener Datos Gas digital",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 950,
+        "y": 220,
+        "wires": [
+            [
+                "def4ebb8f9313d54"
+            ]
+        ]
+    },
+    {
+        "id": "4ae88936692db2ba",
+        "type": "function",
+        "z": "ee2cd2825630fd69",
+        "name": "Formato de Salida",
+        "func": "msg.payload = msg.payload[0];\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1310,
+        "y": 220,
+        "wires": [
+            [
+                "dd638464be759bc1"
+            ]
+        ]
+    },
+    {
+        "id": "dd638464be759bc1",
+        "type": "ui_text",
+        "z": "ee2cd2825630fd69",
+        "group": "063b0fd8e7aed66e",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Estado Actual",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1490,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "18c2e963dab298f8",
+        "type": "inject",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1720,
+        "y": 120,
+        "wires": [
+            [
+                "83348b419cca60c4"
+            ]
+        ]
+    },
+    {
+        "id": "a1ff753350a53b46",
+        "type": "mqtt out",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "topic": "utng/arg/display",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "50c9e624b497b79e",
+        "x": 2180,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "83348b419cca60c4",
+        "type": "ui_text_input",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "label": "Escribir texto en display",
+        "tooltip": "",
+        "group": "80b0cfcd3832c7f3",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 1930,
+        "y": 120,
+        "wires": [
+            [
+                "a1ff753350a53b46"
+            ]
+        ]
+    },
+    {
+        "id": "c24414eb0aec0221",
+        "type": "postgresql",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "query": "SELECT datoRegistrado \nFROM shock\nORDER BY fecha_registro DESC \nLIMIT 1;",
+        "postgreSQLConfig": "9277f660ec41eacb",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 1130,
+        "y": 640,
+        "wires": [
+            [
+                "f1ba8429bc069dad"
+            ]
+        ]
+    },
+    {
+        "id": "d7889ad8e39d7241",
+        "type": "ui_button",
+        "z": "ee2cd2825630fd69",
+        "name": "Obtener Datos",
+        "group": "2746beb901b379c6",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "label": "Obtener Datos shock",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 960,
+        "y": 640,
+        "wires": [
+            [
+                "c24414eb0aec0221"
+            ]
+        ]
+    },
+    {
+        "id": "f1ba8429bc069dad",
+        "type": "function",
+        "z": "ee2cd2825630fd69",
+        "name": "Formato de Salida",
+        "func": "msg.payload = msg.payload[0];\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1310,
+        "y": 640,
+        "wires": [
+            [
+                "1233c5e880665448"
+            ]
+        ]
+    },
+    {
+        "id": "1233c5e880665448",
+        "type": "ui_text",
+        "z": "ee2cd2825630fd69",
+        "group": "2746beb901b379c6",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Estado Actual",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1500,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "ca86a4fefec90a5a",
+        "type": "mqtt in",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "topic": "utng/arg/tracking",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "894951dafb5e412e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 40,
+        "wires": [
+            [
+                "f669b8ae58c04749"
+            ]
+        ]
+    },
+    {
+        "id": "b0a13d3797157ca9",
+        "type": "debug",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "f669b8ae58c04749",
+        "type": "function",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "func": "msg.payload = msg.payload \nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 40,
+        "wires": [
+            [
+                "00348e3a6d5cf9da"
+            ]
+        ]
+    },
+    {
+        "id": "00348e3a6d5cf9da",
+        "type": "postgresql",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "query": "INSERT INTO tracking (nombre, datoRegistrado, fecha_registro) VALUES ('Sensor de Flama', '{{msg.payload}}', NOW());\n",
+        "postgreSQLConfig": "9277f660ec41eacb",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 530,
+        "y": 40,
+        "wires": [
+            [
+                "b0a13d3797157ca9"
+            ]
+        ]
+    },
+    {
+        "id": "c312054112313d93",
+        "type": "mqtt in",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "topic": "utng/arg/flame",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "894951dafb5e412e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 100,
+        "wires": [
+            [
+                "616160ea131bbe89"
+            ]
+        ]
+    },
+    {
+        "id": "288ce96f1a988998",
+        "type": "debug",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 730,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "616160ea131bbe89",
+        "type": "function",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "func": "msg.payload = msg.payload==\"true\"?\"Encendido\":\"Apagado\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 100,
+        "wires": [
+            [
+                "f55bedd4f00d920f"
+            ]
+        ]
+    },
+    {
+        "id": "f55bedd4f00d920f",
+        "type": "postgresql",
+        "z": "ee2cd2825630fd69",
+        "name": "",
+        "query": "INSERT INTO flama (nombre, datoRegistrado, fecha_registro) VALUES ('Sensor de Flama', '{{msg.payload}}', NOW());\n",
+        "postgreSQLConfig": "9277f660ec41eacb",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 530,
+        "y": 100,
+        "wires": [
+            [
+                "288ce96f1a988998"
+            ]
+        ]
+    },
+    {
+        "id": "894951dafb5e412e",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "9277f660ec41eacb",
+        "type": "postgreSQLConfig",
+        "name": "project_sensors",
+        "host": "127.0.0.1",
+        "hostFieldType": "str",
+        "port": "5432",
+        "portFieldType": "num",
+        "database": "project_sensors",
+        "databaseFieldType": "str",
+        "ssl": "false",
+        "sslFieldType": "bool",
+        "applicationName": "",
+        "applicationNameType": "str",
+        "max": "10",
+        "maxFieldType": "num",
+        "idle": "1000",
+        "idleFieldType": "num",
+        "connectionTimeout": "10000",
+        "connectionTimeoutFieldType": "num",
+        "user": "postgres",
+        "userFieldType": "str",
+        "password": "1234",
+        "passwordFieldType": "str"
+    },
+    {
+        "id": "26220687d126bda9",
+        "type": "ui_group",
+        "name": "Humedad",
+        "tab": "d82ea4bafbc906b8",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6a0c38c197ca3c87",
+        "type": "ui_group",
+        "name": "Temperatura",
+        "tab": "d82ea4bafbc906b8",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6df988d63248b17a",
+        "type": "ui_group",
+        "name": "Gas A",
+        "tab": "d82ea4bafbc906b8",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a3120a783b45ebb8",
+        "type": "ui_group",
+        "name": "Flama",
+        "tab": "d82ea4bafbc906b8",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "59030f69684c3481",
+        "type": "ui_group",
+        "name": "Luz",
+        "tab": "d82ea4bafbc906b8",
+        "order": 6,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7ecd3f8883260b99",
+        "type": "ui_group",
+        "name": "Estabilidad",
+        "tab": "d82ea4bafbc906b8",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "18ef67554c2dbd1f",
+        "type": "ui_group",
+        "name": "Movimiento",
+        "tab": "d82ea4bafbc906b8",
+        "order": 7,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2782feef61bebd0e",
+        "type": "ui_group",
+        "name": "Magnetismo",
+        "tab": "d82ea4bafbc906b8",
+        "order": 8,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a140c1781c7615bb",
+        "type": "ui_group",
+        "name": "Objeto",
+        "tab": "d82ea4bafbc906b8",
+        "order": 12,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "50c9e624b497b79e",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "1f98ecb7e0603555",
+        "type": "ui_group",
+        "name": "LedM",
+        "tab": "d82ea4bafbc906b8",
+        "order": 13,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "063b0fd8e7aed66e",
+        "type": "ui_group",
+        "name": "Gas D",
+        "tab": "d82ea4bafbc906b8",
+        "order": 11,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "80b0cfcd3832c7f3",
+        "type": "ui_group",
+        "name": "Texto",
+        "tab": "d82ea4bafbc906b8",
+        "order": 14,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2746beb901b379c6",
+        "type": "ui_group",
+        "name": "Shock",
+        "tab": "d82ea4bafbc906b8",
+        "order": 9,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d82ea4bafbc906b8",
+        "type": "ui_tab",
+        "name": "Sensores",
+        "icon": "dashboard",
+        "order": 6,
+        "disabled": false,
+        "hidden": false
+    }
+]
