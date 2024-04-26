@@ -63,7 +63,7 @@ def main():
                 pin_ledl.on()
                 client.publish(MQTT_TOPIC_MOVIMIENTO, "Movimiento detectado")
                 print("¡Movimiento detectado!")
-                time.sleep(10)  # Esperar un segundo para evitar múltiples detecciones rápidas
+                time.sleep(5)  # Esperar un segundo para evitar múltiples detecciones rápidas
             else:
                 client.publish(MQTT_TOPIC_MOVIMIENTO, "No se detecta movimiento")
                 print("¡No Movimiento detectado!")
@@ -75,3 +75,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
