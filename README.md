@@ -156,11 +156,8 @@ https://www.youtube.com/watch?si=-oasoKfINWAO1MFN&v=vpvgPYcVFnE&feature=youtu.be
 | 6  | Detectar cuando se cae el Bote de Basura | Alta    | 2 Semanas   | Tirar el bote para que se active el funcionamiento del sensor         | Francisco   |
 | 7  | Activar un buzzer | Media |2 Semanas| Al momento de que se cae el bote tiene que activarse el buzzer como alerta de que esta tirado el bote | Todos |
 | 8  | Encender y apagar led | Media |2 Semanas | Al momento que se abre el bote el led se enciende y al momento que se cierra se apaga. | Todos |
-
-
-
-
-## Video agradecimiento
+| 9 | Mostrar temperatura, humedad y gas en display | Media |2 Semanas | Se muestran dichos datos en el display cuando se registran. | Brayan|
+| 10 |Detectar objetos metalicos  | Media |1 Semanas | Se ingresa un objeto metalico o magnetico | Brayan|
 
 ## Carta de liberación del proyecto
 
