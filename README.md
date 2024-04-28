@@ -96,7 +96,7 @@ Nuestro prouducto: Botes de basura tradicionales y contenedores inteligentes bá
 ![Codigos placa uno](https://github.com/Brayan7273/BasueroInteligente/tree/main/CODIGOS/PLACA%201)
 
 ## Conexion 1
-
+![image](file:///C:/Users/Braya/Downloads/WhatsApp%20Image%202024-04-28%20at%201.53.34%20AM.jpeg)
 # Placa 2
 ![Codigos placa dos](https://github.com/Brayan7273/BasueroInteligente/tree/main/CODIGOS/PLACA%202)
 
