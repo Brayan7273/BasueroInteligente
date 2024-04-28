@@ -134,7 +134,7 @@ Nuestro prouducto: Botes de basura tradicionales y contenedores inteligentes bá
 
 
 # Evidencias de funcionamiento
-![}(https://www.youtube.com/watch?si=-oasoKfINWAO1MFN&v=vpvgPYcVFnE&feature=youtu.be)
+https://www.youtube.com/watch?si=-oasoKfINWAO1MFN&v=vpvgPYcVFnE&feature=youtu.be
   
 
 ## Software Utilizado
