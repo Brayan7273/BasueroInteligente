@@ -163,4 +163,6 @@ https://www.youtube.com/watch?si=-oasoKfINWAO1MFN&v=vpvgPYcVFnE&feature=youtu.be
 ## Carta de liberación del proyecto
 ![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/2c3a5e33-85e9-4a04-9ce9-863bd57e3424)
 
+## Video agradecimiento
+https://youtube.com/shorts/5TWGldKL-0U?si=zsOPFjsyAF9MG6yC
 
