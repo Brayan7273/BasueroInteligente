@@ -96,25 +96,26 @@ Nuestro prouducto: Botes de basura tradicionales y contenedores inteligentes bá
 ![Codigos placa uno](https://github.com/Brayan7273/BasueroInteligente/tree/main/CODIGOS/PLACA%201)
 
 ## Conexion 1
+![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/ce72e532-2123-46a5-9c2e-cdd2fcbc7678)
 
 # Placa 2
 ![Codigos placa dos](https://github.com/Brayan7273/BasueroInteligente/tree/main/CODIGOS/PLACA%202)
 
 ## Conexion 2
+![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/2d7b48b6-ce25-499e-969f-6de76eb9c540)
 
 # Placa 3
 ![Codigos placa tres](https://github.com/Brayan7273/BasueroInteligente/tree/main/CODIGOS/PLACA%203)
 
 ## Conexion 3
+![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/c5dafc88-738a-4004-a42d-bb7e84dc0c6b)
 
 # Placa 4
 ![Codigos placa cuatro](https://github.com/Brayan7273/BasueroInteligente/tree/main/CODIGOS/PLACA%204)
 
 ## Conexion 4
+![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/08ed047b-2ce2-4f0b-856a-695ecebca728)
 
-
- 
-  
 ## Uso de Grafana
 ![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/d08a801c-13fe-460c-82cc-32741ae6e6af)
 ![image](https://github.com/Brayan7273/BasueroInteligente/assets/130590443/6c70c947-e540-497c-aa22-94f5c744ea44)
